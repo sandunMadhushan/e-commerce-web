@@ -8,11 +8,13 @@
 <body>
     <section class="navbar">
         <?php include './partials/navbar.php' ?>
+        <?php include './partials/login-popup.php' ?>
     </section>
     <section class="content">
 
     </section>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
