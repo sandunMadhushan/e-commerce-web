@@ -22,7 +22,7 @@
         <section class="featured-products">
             <div class="product-card">
                 <img src="images/backpack01.png" alt="Product 3">
-                <h2>Product 3</h2>
+                <h2>Product 1</h2>
                 <p>LKR 5500.00</p>
                 <div style="align-items: center; justify-content: center;">
                     <a class="add2cart" href="#">Add to Cart</a>
@@ -32,7 +32,7 @@
             </div>
             <div class="product-card">
                 <img src="images/backpack01.png" alt="Product 3">
-                <h2>Product 3</h2>
+                <h2>Product 2</h2>
                 <p>LKR 5500.00</p>
                 <div style="align-items: center; justify-content: center;">
                     <a class="add2cart" href="#">Add to Cart</a>
@@ -51,7 +51,19 @@
                 </div>
             </div>
         </section>
-
+        <section class="newsletter">
+            <div class="col">
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="col">
+                <form action="#">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
         <script src="script.js"></script>
 </body>
 
