@@ -16,6 +16,6 @@
         </ul>
     </nav>
     <div class="header-button">
-        <a href="#" id="show-login">Your Cart</a>
+        <a href="#" id="show-login">SIGN IN</a>
     </div>
 </header>
