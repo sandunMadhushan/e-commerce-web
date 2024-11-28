@@ -510,3 +510,86 @@ header .header-button a:hover {
 .newsletter form button:hover {
   background-color: #db322f;
 }
+
+.product-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 50px;
+}
+
+.product-card.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.product-card.small {
+  grid-column: span 1;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card .product-image {
+  width: 100%;
+  height: 150px;
+  background-color: #f0f0f0;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card.large .product-image {
+  height: 500px;
+}
+
+.product-card.large {
+  height: 630px;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.rating {
+  font-size: 1.2rem;
+  display: inline-flex;
+  gap: 5px;
+  cursor: pointer;
+  color: #cccccc;
+}
+
+.rating .star {
+  transition: color 0.2s;
+}
+
+.rating .star:hover,
+.rating .star:hover ~ .star {
+  color: #ffa500;
+}
+
+.rating .star:hover ~ .star {
+  color: #cccccc;
+}

@@ -64,6 +64,164 @@
                 </form>
             </div>
         </section>
+
+        <section class="product-section">
+            <div class="product-card large">
+                <div class="product-image">
+                </div>
+                <h3>Product Name</h3>
+                <p>Rs.1000/-</p>
+                <div class="rating">
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                </div>
+            </div>
+            <div class="product-card small">
+                <div class="product-image"></div>
+                <h3>Product Name</h3>
+                <p>Rs.1000/-</p>
+                <div class="rating">
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                </div>
+            </div>
+            <div class="product-card small">
+                <div class="product-image"></div>
+                <h3>Product Name</h3>
+                <p>Rs.1000/-</p>
+                <div class="rating">
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                </div>
+            </div>
+            <div class="product-card small">
+                <div class="product-image"></div>
+                <h3>Product Name</h3>
+                <p>Rs.1000/-</p>
+                <div class="rating">
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                </div>
+            </div>
+            <div class="product-card small">
+                <div class="product-image"></div>
+                <h3>Product Name</h3>
+                <p>Rs.1000/-</p>
+                <div class="rating">
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                </div>
+            </div>
+            <div class="product-card small">
+                <div class="product-image"></div>
+                <h3>Product Name</h3>
+                <p>Rs.1000/-</p>
+                <div class="rating">
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                </div>
+            </div>
+            <div class="product-card small">
+                <div class="product-image"></div>
+                <h3>Product Name</h3>
+                <p>Rs.1000/-</p>
+                <div class="rating">
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                    <span class="star material-icons">
+                        star_outline
+                    </span>
+                </div>
+            </div>
+        </section>
         <script src="script.js"></script>
 </body>
 
