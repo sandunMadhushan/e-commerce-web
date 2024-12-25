@@ -10,7 +10,7 @@
         <?php include './partials/navbar.php' ?>
         <?php include './partials/login-popup.php' ?>
     </section>
-    <section class="content">
+    < class="content">
         <section class="hero">
             <div class="hero-text">
                 <h1>ShopEase</h1>
@@ -221,6 +221,23 @@
                     </span>
                 </div>
             </div>
+        </section>
+
+        <section class="about-shop">
+            <div class="col">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <!-- <div class="col">
+                <form action="#">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div> -->
+        </section>
+        <section>
+            <?php include './partials/footer.php' ?>
         </section>
         <script src="script.js"></script>
 </body>
