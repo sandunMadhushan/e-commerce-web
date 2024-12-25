@@ -5,7 +5,7 @@
     <div class="footer-column">
         <h3>Quick Links</h3>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="../index.php">Home</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
@@ -13,10 +13,10 @@
     </div>
     <div class="footer-column">
         <h3>Contact Us</h3>
-        <p>123 E-commerce St.</p>
-        <p>City, State, 12345</p>
-        <p>Email: info@example.com</p>
-        <p>Phone: (123) 456-7890</p>
+        <p>123 ABC St.</p>
+        <p>Matale, 21000</p>
+        <a href="mailto:contact@shopease.com">Email: contact@shopease.com</a>
+        <a href="tel:+94711234567">Phone: +94 71 123 4567</a>
     </div>
 </div>
 
@@ -59,5 +59,11 @@
 
 .footer-column ul li a:hover {
     text-decoration: underline;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
 }
 </style>
