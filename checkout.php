@@ -251,37 +251,160 @@
             <button class="tab-link" onclick="openTab(event, 'shipping-details')">2. Shipping Details</button>
             <button class="tab-link" onclick="openTab(event, 'payment-options')">3. Payment Options</button>
         </div>
+        <!-- <div id="shopping-cart" class="tab-content active">
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: start;">
+
+                <section
+                    style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <h2 style="margin-bottom: 1.5rem; font-size: 1.8rem; color: #333;">Shopping Cart</h2>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid #ddd; padding-bottom: 1.5rem;">
+                        <img src="./images/backpack01.png" alt="Product Image"
+                            style="width: 100px; height: 100px; border-radius: 10px;">
+                        <div style="flex: 1; margin-left: 1.5rem;">
+                            <h4 style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #333;">Product Name</h4>
+                            <p style="margin: 0.5rem 0; font-size: 1rem; color: #777;">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                            <p style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #333;">Rs. 1000/-</p>
+                        </div>
+                        <select style="padding: 0.5rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                            <option>1 pcs</option>
+                            <option>2 pcs</option>
+                            <option>3 pcs</option>
+                        </select>
+                    </div>
+
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid #ddd; padding-bottom: 1.5rem;">
+                        <img src="./images/backpack01.png" alt="Product Image"
+                            style="width: 100px; height: 100px; border-radius: 10px;">
+                        <div style="flex: 1; margin-left: 1.5rem;">
+                            <h4 style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #333;">Product Name</h4>
+                            <p style="margin: 0.5rem 0; font-size: 1rem; color: #777;">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                            <p style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #333;">Rs. 1000/-</p>
+                        </div>
+                        <select style="padding: 0.5rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                            <option>1 pcs</option>
+                            <option>2 pcs</option>
+                            <option>3 pcs</option>
+                        </select>
+                    </div>
+                    <div style="display: flex; justify-content: flex-end; margin-top: 1.5rem;">
+                        <button type="button" id="shoppingcartBtn" onclick="openTab(event, 'shipping-details')"
+                            style="padding: 0.75rem 2rem; border: none; border-radius: 5px; font-size: 1rem; background-color: #ff4d4d; color: white; cursor: pointer;">Next</button>
+                    </div>
+                </section>
+
+                <section
+                    style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <h2 style="margin-bottom: 1.5rem; font-size: 1.8rem; color: #333;">Summary</h2>
+                    <div>
+                        <p
+                            style="font-size: 1rem; color: #333; margin-bottom: 1rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
+                            <strong>Enter Coupon Code</strong>
+                        </p>
+                        <p style="display: flex; justify-content: space-between; font-size: 1rem; margin: 0;">
+                            <span>Subtotal:</span>
+                            <span>Rs. 2000/-</span>
+                        </p>
+                        <p style="display: flex; justify-content: space-between; font-size: 1rem; margin: 0;">
+                            <span>Shipping:</span>
+                            <span>Free</span>
+                        </p>
+                        <p style="display: flex; justify-content: space-between; font-size: 1rem; margin: 0;">
+                            <span>Taxes:</span>
+                            <span>Rs. 100/-</span>
+                        </p>
+                        <h3
+                            style="display: flex; justify-content: space-between; font-size: 1.2rem; font-weight: bold; margin-top: 1.5rem;">
+                            <span>Total:</span>
+                            <span>Rs. 2100/-</span>
+                        </h3>
+                    </div>
+                </section>
+            </div>
+        </div> -->
 
         <div id="shopping-cart" class="tab-content active">
-            <section class="cart-section">
-                <h2>Shopping Cart</h2>
-                <div class="cart-items">
-                    <img src="./images/backpack01.png" alt="Product Image">
-                    <div>
-                        <h4>Product Name</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p><strong>Rs 1000/-</strong></p>
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: start;">
+                <section
+                    style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <h2 style="margin-bottom: 1.5rem; font-size: 1.8rem; color: #333;">Shopping Cart</h2>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid #ddd; padding-bottom: 1.5rem;">
+                        <img src="./images/backpack01.png" alt="Product Image"
+                            style="width: 100px; height: 100px; border-radius: 10px;">
+                        <div style="flex: 1; margin-left: 1.5rem;">
+                            <h4 style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #333;">Product Name</h4>
+                            <p style="margin: 0.5rem 0; font-size: 1rem; color: #777;">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                            <p style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #333;">Rs. 1000/-</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <button onclick="decrementQuantity(this)"
+                                style="padding: 0.5rem 1rem; border: 1px solid #ddd; background-color: #fff; border-radius: 5px; cursor: pointer;color: #333; ">-</button>
+                            <input type="text" value="1" readonly
+                                style="width: 50px; text-align: center; padding: 0.5rem; border: 1px solid #ddd; border-radius: 5px;">
+                            <button onclick="incrementQuantity(this)"
+                                style="padding: 0.5rem 1rem; border: 1px solid #ddd; background-color: #fff; border-radius: 5px; cursor: pointer;color: #333">+</button>
+                        </div>
                     </div>
-                    <select>
-                        <option>1 pcs</option>
-                        <option>2 pcs</option>
-                        <option>3 pcs</option>
-                    </select>
-                </div>
-                <div class="summary">
-                    <p>Enter Coupon Code</p>
-                    <p>Subtotal: Rs 2000/-</p>
-                    <p>Shipping: Free</p>
-                    <p>Taxes: Rs 100/-</p>
-                    <h4>Total: Rs 2100/-</h4>
-                </div>
-                <button id="shoppingcartBtn" onclick="openTab(event, 'shipping-details')">Next</button>
-            </section>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid #ddd; padding-bottom: 1.5rem;">
+                        <img src="./images/backpack01.png" alt="Product Image"
+                            style="width: 100px; height: 100px; border-radius: 10px;">
+                        <div style="flex: 1; margin-left: 1.5rem;">
+                            <h4 style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #333;">Product Name</h4>
+                            <p style="margin: 0.5rem 0; font-size: 1rem; color: #777;">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                            <p style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #333;">Rs. 1000/-</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <button onclick="decrementQuantity(this)"
+                                style="padding: 0.5rem 1rem; border: 1px solid #ddd; background-color: #fff; border-radius: 5px; cursor: pointer;color: #333">-</button>
+                            <input type="text" value="1" readonly
+                                style="width: 50px; text-align: center; padding: 0.5rem; border: 1px solid #ddd; border-radius: 5px;">
+                            <button onclick="incrementQuantity(this)"
+                                style="padding: 0.5rem 1rem; border: 1px solid #ddd; background-color: #fff; border-radius: 5px; cursor: pointer;color: #333">+</button>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: flex-end; margin-top: 1.5rem;">
+                        <button type="button" id="shoppingcartBtn" onclick="openTab(event, 'shipping-details')"
+                            style="padding: 0.75rem 2rem; border: none; border-radius: 5px; font-size: 1rem; background-color: #ff4d4d; color: white; cursor: pointer;">Next</button>
+                    </div>
+                </section>
+                <section
+                    style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <h2 style="margin-bottom: 1.5rem; font-size: 1.8rem; color: #333;">Summary</h2>
+                    <div>
+                        <p
+                            style="font-size: 1rem; color: #333; margin-bottom: 1rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
+                            <strong>Enter Coupon Code</strong>
+                        </p>
+                        <p style="display: flex; justify-content: space-between; font-size: 1rem; margin: 0;">
+                            <span>Subtotal:</span>
+                            <span>Rs. 2000/-</span>
+                        </p>
+                        <p style="display: flex; justify-content: space-between; font-size: 1rem; margin: 0;">
+                            <span>Shipping:</span>
+                            <span>Free</span>
+                        </p>
+                        <p style="display: flex; justify-content: space-between; font-size: 1rem; margin: 0;">
+                            <span>Taxes:</span>
+                            <span>Rs. 100/-</span>
+                        </p>
+                        <h3
+                            style="display: flex; justify-content: space-between; font-size: 1.2rem; font-weight: bold; margin-top: 1.5rem;">
+                            <span>Total:</span>
+                            <span>Rs. 2100/-</span>
+                        </h3>
+                    </div>
+                </section>
+            </div>
         </div>
-
         <div id="shipping-details" class="tab-content">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-                <!-- Shipping Details Section -->
                 <section class="shipping-section">
                     <h2>Shipping Details</h2>
                     <form>
@@ -366,14 +489,12 @@
         </div>
         <div id="payment-options" class="tab-content">
             <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
-                <!-- Payment Method Section -->
                 <section
                     style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                     <h2 style="margin-bottom: 1.5rem; font-size: 1.8rem; color: #333;">Payment Method</h2>
                     <form>
-                        <!-- Credit Card Option -->
                         <label class="payment-option"
-                            style="display: block; padding: 1.5rem; border: 2px solid #ff4d4d; border-radius: 10px; margin-bottom: 1rem; cursor: pointer; background-color: #f9f9f9;">
+                            style="display: block; padding: 1.5rem; border: 2px solid #ff4d4d; border-radius: 10px; margin-bottom: 1rem; cursor: pointer; background-color: #f9f9f9; transition: border-color 0.3s;">
                             <input type="radio" name="payment-method" checked style="display: none;">
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                                 <h4 style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #333;">Credit Card
@@ -394,9 +515,8 @@
                             </div>
                         </label>
 
-                        <!-- PayPal Option -->
                         <label class="payment-option"
-                            style="display: block; padding: 1.5rem; border: 2px solid #ddd; border-radius: 10px; margin-bottom: 1rem; cursor: pointer; background-color: #f9f9f9;">
+                            style="display: block; padding: 1.5rem; border: 2px solid #ddd; border-radius: 10px; margin-bottom: 1rem; cursor: pointer; background-color: #f9f9f9; transition: border-color 0.3s;">
                             <input type="radio" name="payment-method" style="display: none;">
                             <div style="display: flex; justify-content: space-between; align-items: center;">
                                 <div>
@@ -405,7 +525,7 @@
                                     <p style="margin: 0; font-size: 0.9rem; color: #777;">Lorem ipsum dolor sit amet,
                                         consectetur adipiscing elit.</p>
                                 </div>
-                                <img src="./images/paypal-logo.png" alt="PayPal Logo" style="width: 50px;">
+                                <img src="./images/paypal-logo-2.svg" alt="PayPal Logo" style="width: 50px;">
                             </div>
                         </label>
 
@@ -419,7 +539,6 @@
                     </form>
                 </section>
 
-                <!-- Summary Section -->
                 <section
                     style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                     <h2 style="margin-bottom: 1.5rem; font-size: 1.8rem; color: #333;">Summary</h2>
@@ -470,11 +589,7 @@
                 </section>
             </div>
         </div>
-
-
-
     </main>
-
     <section>
         <?php include './partials/footer.php'; ?>
     </section>
@@ -523,6 +638,20 @@
             this.closest('.payment-option').style.borderColor = "#ff4d4d"; // Active border color
         });
     });
+
+    function incrementQuantity(button) {
+        const input = button.previousElementSibling;
+        let value = parseInt(input.value);
+        input.value = value + 1;
+    }
+
+    function decrementQuantity(button) {
+        const input = button.nextElementSibling;
+        let value = parseInt(input.value);
+        if (value > 1) {
+            input.value = value - 1;
+        }
+    }
     </script>
 </body>
 
