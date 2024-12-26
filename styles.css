@@ -10,6 +10,7 @@
   margin-top: 100px;
 } */
 
+/* HOME PAGE */
 .hero {
   margin: 0;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
@@ -39,7 +40,7 @@
 .hero a {
   background-color: #f44336;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 10px 20px;
   border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
@@ -93,7 +94,7 @@
 .featured-products .product-card a {
   background-color: #f44336;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
@@ -295,4 +296,118 @@
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
+}
+
+/* SHOP */
+.shop-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 130px;
+  margin-bottom: 32px;
+}
+
+.shop-page {
+  padding: 32px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 32px;
+}
+
+.category {
+  background-color: #f5f5f5;
+  padding: 16px;
+  border: #222222 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+  margin: 0 8px;
+  text-transform: uppercase;
+}
+.category:hover {
+  box-shadow: 0 0 16px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.promotions,
+.offers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.promotion,
+.offer {
+  background-color: #f5f5f5;
+  padding: 60px 16px;
+  border: #222222 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+  margin: 0 8px;
+}
+
+.promotion:hover,
+.offer:hover {
+  box-shadow: 0 0 16px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.promotions .promotion h3,
+.offers .offer h3 {
+  margin-bottom: 16px;
+}
+
+.shop-product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.shop-product-card {
+  background-color: #f5f5f5;
+  padding: 96px 16px;
+  text-align: center;
+  border: #222222 1px solid;
+  border-radius: 5px;
+}
+
+.shop-product-card:hover {
+  box-shadow: 0 0 16px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.inspiration,
+.recommended {
+  margin: 50px 0;
+}
+
+.inspiration h2,
+.recommended h2 {
+  margin-bottom: 32px;
+}
+
+hr {
+  margin: 32px 0;
+  padding: 0;
+  border-width: 2px;
+}
+
+.promotions a,
+.offers a {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.promotions a:hover,
+.offers a:hover {
+  background-color: #db322f;
 }

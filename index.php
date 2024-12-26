@@ -10,7 +10,7 @@
         <?php include './partials/navbar.php' ?>
         <?php include './partials/login-popup.php' ?>
     </section>
-    < class="content">
+    <section class="content">
         <section class="hero">
             <div class="hero-text">
                 <h1>ShopEase</h1>

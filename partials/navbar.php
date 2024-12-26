@@ -26,7 +26,6 @@ header {
     right: 0;
     width: 100%;
     height: 80px;
-    position: fixed;
     background-color: rgba(244, 67, 54, 0.8);
     padding: 3rem 2rem;
     display: flex;
@@ -37,6 +36,7 @@ header {
     z-index: 1000;
     overflow: hidden;
     top: 0;
+    position: fixed;
 }
 
 header .logo {
