@@ -48,7 +48,7 @@
         <section class="inspiration">
             <h2>Inspiration</h2>
             <div class="shop-product-grid">
-                <div class="shop-product-card">Product 1</div>
+                <a href="product.php" class="shop-product-card">Product 1</a>
                 <div class="shop-product-card">Product 2</div>
                 <div class="shop-product-card">Product 3</div>
                 <div class="shop-product-card">Product 4</div>
