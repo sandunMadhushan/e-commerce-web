@@ -367,6 +367,11 @@
   gap: 16px;
 }
 
+.shop-product-grid a {
+  text-decoration: none;
+  color: black;
+}
+
 .shop-product-card {
   background-color: #f5f5f5;
   padding: 96px 16px;
@@ -409,5 +414,102 @@ hr {
 
 .promotions a:hover,
 .offers a:hover {
+  background-color: #db322f;
+}
+
+/* SINGLE PRODUCT PAGE */
+
+.product-page {
+  padding: 32px;
+  margin-top: 130px;
+}
+.product-details {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.product-image img {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-info {
+  margin-left: 2rem;
+}
+
+.product-info h1 {
+  margin-bottom: 0.5rem;
+}
+
+.rating {
+  margin-bottom: 1rem;
+  color: #f5a623;
+}
+
+.price {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.description {
+  margin-bottom: 1rem;
+}
+
+.add-to-cart {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.similar-products,
+.reviews {
+  margin-top: 2rem;
+}
+
+.similar-products h2,
+.reviews h2 {
+  margin-bottom: 1rem;
+}
+
+.single-product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.single-product-card {
+  background-color: #f9f9f9;
+  padding: 96px 16px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.review {
+  margin-bottom: 1rem;
+}
+
+.review h4 {
+  margin-bottom: 0.5rem;
+}
+
+.product-page a {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 16px;
+}
+
+.product-page a:hover {
   background-color: #db322f;
 }
