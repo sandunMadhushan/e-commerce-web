@@ -29,7 +29,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat bibendum ex vel elementum.
                     Cras eget sapien accumsan.
                 </p>
-                <a class="add-to-cart">Add to cart</a>
+                <a href="checkout.php" class="add-to-cart">Add to cart</a>
             </div>
         </section>
 
