@@ -1,6 +1,7 @@
 <div class="footer">
     <div class="footer-column">
         <img src="./images/logo.png" alt="Logo" class="footer-logo">
+        <p>&copy; <span id="current-year"></span> ShopEase. All rights reserved.</p>
     </div>
     <div class="footer-column">
         <h3>Quick Links</h3>
@@ -67,3 +68,7 @@
     display: block;
 }
 </style>
+
+<script>
+document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
