@@ -32,3 +32,24 @@ function openTab(event, tabId) {
   document.getElementById(tabId).classList.add("active");
   event.currentTarget.classList.add("active");
 }
+
+// Show or hide the "Go to Top" button on scroll
+window.onscroll = function () {
+  const goToTopButton = document.getElementById("goToTop");
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    goToTopButton.style.display = "flex"; // Show button
+  } else {
+    goToTopButton.style.display = "none"; // Hide button
+  }
+};
+
+// Smoothly scroll to the top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}

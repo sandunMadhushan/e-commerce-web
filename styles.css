@@ -10,6 +10,75 @@
   margin-top: 100px;
 } */
 
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff4d4d;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e63a3a;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+  background-color: #ff4d4d;
+  height: 16px;
+  display: block;
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+  background-color: #ff4d4d;
+  height: 16px;
+  display: block;
+}
+
+::-webkit-scrollbar-button:hover {
+  background-color: #e63a3a;
+}
+
+::-webkit-scrollbar-button:horizontal {
+  display: none;
+}
+
+/* "Go to Top" Button */
+#goToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #ff4d4d; /* Red background */
+  color: white; /* White arrow */
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the button */
+#goToTop:hover {
+  background-color: #e63a3a; /* Darker red */
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+
 /* HOME PAGE */
 .hero {
   margin: 0;

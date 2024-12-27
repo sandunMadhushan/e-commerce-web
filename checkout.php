@@ -593,6 +593,7 @@
     <section>
         <?php include './partials/footer.php'; ?>
     </section>
+    <script src="script.js"></script>
 
     <script>
     function openTab(event, tabId) {

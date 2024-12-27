@@ -20,6 +20,7 @@
         <a href="tel:+94711234567">Phone: +94 71 123 4567</a>
     </div>
 </div>
+<button id="goToTop" onclick="scrollToTop()">↑</button>
 
 <style>
 .footer {
