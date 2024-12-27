@@ -695,33 +695,3 @@ hr {
 .submit-btn .material-icons {
   font-size: 20px;
 }
-
-/* Add these styles to your existing contact form styles */
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #f44336;
-  box-shadow: 0 0 5px rgba(244, 67, 54, 0.3);
-}
-
-.contact-form .submit-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: #f44336;
-  transition: background 0.3s ease;
-}
-
-.contact-form .submit-btn:hover {
-  background: #db322f;
-}
-
-.contact-form .submit-btn .material-icons {
-  font-size: 20px;
-}
-
-.contact-form input:invalid,
-.contact-form textarea:invalid {
-  border-color: #ff4d4d;
-}
