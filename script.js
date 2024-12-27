@@ -91,32 +91,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Contact page form validation
 document.addEventListener("DOMContentLoaded", function () {
-  const contactForm = document.querySelector(".contact-form");
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
+  const contactPageForm = document.getElementById("contactPageForm");
+  console.log("Contact form found:", contactPageForm);
+
+  if (contactPageForm) {
+    contactPageForm.addEventListener("submit", function (e) {
       e.preventDefault();
+      console.log("Form submitted");
 
-      // Get all form inputs
-      const firstName = document.getElementById("firstName").value.trim();
-      const lastName = document.getElementById("lastName").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const subject = document.getElementById("subject").value.trim();
-      const message = document.getElementById("message").value.trim();
+      const firstName = document
+        .getElementById("contact_firstName")
+        .value.trim();
+      const lastName = document.getElementById("contact_lastName").value.trim();
+      const email = document.getElementById("contact_email").value.trim();
+      const subject = document.getElementById("contact_subject").value.trim();
+      const message = document.getElementById("contact_message").value.trim();
 
-      // Basic validation
       if (!firstName || !lastName || !email || !subject || !message) {
         alert("Please fill in all fields");
         return;
       }
 
-      // Email validation
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
         alert("Please enter a valid email address");
         return;
       }
-
-      // If validation passes, collect form data
       const formData = {
         firstName,
         lastName,
@@ -125,12 +125,9 @@ document.addEventListener("DOMContentLoaded", function () {
         message,
       };
 
-      // Here you would typically send the data to your server
-      console.log("Form submitted:", formData);
-
-      // Show success message
+      console.log("Form data:", formData);
       alert("Thank you for your message! We will get back to you soon.");
-      contactForm.reset();
+      contactPageForm.reset();
     });
   }
 });

@@ -143,15 +143,18 @@
         </p>
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-            <div class="contact-form">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="email" placeholder="Your Email">
-                <input type="text" placeholder="Subject">
-                <textarea placeholder="Your Message"></textarea>
-                <button class="submit-btn">Send Message</button>
-            </div>
-
+            <form class="contact-form" id="contactPageForm" method="POST">
+                <input type="text" id="contact_firstName" name="firstName" placeholder="First Name" required>
+                <input type="text" id="contact_lastName" name="lastName" placeholder="Last Name" required>
+                <input type="email" id="contact_email" name="email" placeholder="Your Email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <input type="text" id="contact_subject" name="subject" placeholder="Subject" required>
+                <textarea id="contact_message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">
+                    Send Message
+                    <span class="material-icons">send</span>
+                </button>
+            </form>
             <div class="contact-info">
                 <h3>Contact Information</h3>
                 <p><strong>Address:</strong> 123 ABC Street, Metropolis, MT 2100</p>
