@@ -338,6 +338,7 @@
 .rating .star:hover,
 .rating .star:hover ~ .star {
   color: #ffa500;
+  transform: scale(1.2);
 }
 
 .rating .star:hover ~ .star {
