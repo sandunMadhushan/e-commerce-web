@@ -110,6 +110,7 @@
     <section>
         <?php include './partials/footer.php'; ?>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

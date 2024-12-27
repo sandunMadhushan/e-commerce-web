@@ -236,6 +236,7 @@
                 </form>
             </div> -->
         </section>
+
         <section>
             <?php include './partials/footer.php' ?>
         </section>
