@@ -1,22 +1,37 @@
-//rating products
-const stars = document.querySelectorAll(".rating .star");
+// Select all product cards with ratings
+const productCards = document.querySelectorAll(".product-card");
 
-stars.forEach((star, index) => {
-  star.addEventListener("mouseover", () => {
-    stars.forEach((s, i) => {
-      s.style.color = i <= index ? "#ffa500" : "#cccccc";
+productCards.forEach((card) => {
+  const stars = card.querySelectorAll(".rating .star");
+  let selectedRating = 0; // Track the selected rating for each product
+
+  // Add event listeners to stars
+  stars.forEach((star, index) => {
+    // Highlight stars on hover
+    star.addEventListener("mouseover", () => {
+      stars.forEach((s, i) => {
+        s.textContent = i <= index ? "star" : "star_outline"; // Fill stars up to hover index
+      });
     });
-  });
 
-  star.addEventListener("mouseout", () => {
-    stars.forEach((s) => {
-      s.style.color = "#cccccc";
+    // Reset stars to their current rating on mouse out
+    star.addEventListener("mouseout", () => {
+      stars.forEach((s, i) => {
+        s.textContent = i < selectedRating ? "star" : "star_outline"; // Reflect selected rating
+      });
     });
-  });
 
-  star.addEventListener("click", () => {
-    stars.forEach((s, i) => {
-      s.style.color = i <= index ? "#ffa500" : "#cccccc";
+    // Set the selected rating on click
+    star.addEventListener("click", () => {
+      selectedRating = index + 1; // Update the selected rating
+      stars.forEach((s, i) => {
+        s.textContent = i < selectedRating ? "star" : "star_outline"; // Permanently fill selected stars
+      });
+      console.log(
+        `Product: ${
+          card.querySelector("h3").innerText
+        }, Rating: ${selectedRating}`
+      );
     });
   });
 });
