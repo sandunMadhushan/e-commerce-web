@@ -68,3 +68,69 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Get form data
+      const formData = new FormData(contactForm);
+      const data = Object.fromEntries(formData);
+
+      // Here you would typically send the data to your server
+      console.log("Form submitted:", data);
+
+      // Show success message
+      alert("Thank you for your message! We will get back to you soon.");
+      contactForm.reset();
+    });
+  }
+});
+
+// Contact page form validation
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.querySelector(".contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Get all form inputs
+      const firstName = document.getElementById("firstName").value.trim();
+      const lastName = document.getElementById("lastName").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      // Basic validation
+      if (!firstName || !lastName || !email || !subject || !message) {
+        alert("Please fill in all fields");
+        return;
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address");
+        return;
+      }
+
+      // If validation passes, collect form data
+      const formData = {
+        firstName,
+        lastName,
+        email,
+        subject,
+        message,
+      };
+
+      // Here you would typically send the data to your server
+      console.log("Form submitted:", formData);
+
+      // Show success message
+      alert("Thank you for your message! We will get back to you soon.");
+      contactForm.reset();
+    });
+  }
+});
