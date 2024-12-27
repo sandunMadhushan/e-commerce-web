@@ -229,18 +229,56 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
             </div>
-            <!-- <div class="col">
-                <form action="#">
-                    <input type="email" placeholder="Enter your email address">
-                    <button type="submit">Subscribe</button>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="form-container">
+                <h2>Get in Touch</h2>
+                <p>Have questions? We'd love to hear from you.</p>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select Subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Send Message
+                        <span class="material-icons">send</span>
+                    </button>
                 </form>
-            </div> -->
+            </div>
         </section>
 
         <section>
             <?php include './partials/footer.php' ?>
         </section>
         <script src="script.js"></script>
+
 </body>
 
 </html>

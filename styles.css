@@ -583,3 +583,145 @@ hr {
 .product-page a:hover {
   background-color: #db322f;
 }
+
+/* index page contact form */
+.contact-form-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.form-container p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.form-group label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus ~ label,
+.form-group textarea:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:valid ~ label {
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  color: #f44336;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: none;
+}
+
+.focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f44336;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus ~ .focus-border,
+.form-group textarea:focus ~ .focus-border {
+  width: 100%;
+}
+
+.submit-btn {
+  padding: 12px 30px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #db322f;
+}
+
+.submit-btn .material-icons {
+  font-size: 20px;
+}
+
+/* Add these styles to your existing contact form styles */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #f44336;
+  box-shadow: 0 0 5px rgba(244, 67, 54, 0.3);
+}
+
+.contact-form .submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #f44336;
+  transition: background 0.3s ease;
+}
+
+.contact-form .submit-btn:hover {
+  background: #db322f;
+}
+
+.contact-form .submit-btn .material-icons {
+  font-size: 20px;
+}
+
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+  border-color: #ff4d4d;
+}
